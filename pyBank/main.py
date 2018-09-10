@@ -1,5 +1,5 @@
-from file_class import FileClass
-from calculator_class import CalculatorClass
+from modules.file_class import FileClass
+from modules.calculator_class import CalculatorClass
 
 file_name = "./pyBank/data/budget_data.csv"
 fileExport = "./pyBank/data/budget_data.text"
@@ -21,6 +21,7 @@ lowestLabel, lowestProfit = MyCalculator.getLowestProfit(reader, "Date", "Profit
 
 # Print Screen Results
 print(title.upper())
+
 print('-' * (len(title) + 5))
 
 print(f"Total Months: {totalMonths}")
